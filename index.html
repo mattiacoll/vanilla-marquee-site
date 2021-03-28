@@ -7,15 +7,16 @@
 	<title>Vanilla marquee</title>
 	<link rel="stylesheet" href="css/style.css">
 	<style>
-		#marquee {
+		.marquee {
 			width: 250px;
 			background-color: #159957;
 			background-image: linear-gradient( 120deg, #155799, #159957);
 
 			font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-			color: #FFF;
-
+			color: #FFF !important;
 			overflow: hidden;
+			white-space: nowrap;
+			line-height: 1;
 		}
 	</style>
 
@@ -32,32 +33,48 @@
 
 </head>
 <body>
-	
-	<div id="main-content">
+
+	<section class="page-header">
+		<h1 class="project-name">vanilla-marquee</h1>
+		<h2 class="project-tagline"></h2>
+		<a href="https://github.com/mattiacoll/vanilla-marquee" class="btn">View on GitHub</a>
+	</section>
+
+	<section class="main-content">
 
 		<h1>Vanilla marquee</h1>
 		<p>Vanilla marquee is a modern implementation of jQuery.marquee</p>
 
 		<h2>Installation</h2>
-		<p>You can install vanilla marquee via npm (npm i vanilla-marquee) or via jsdelivr using script type="module"</p>
+		<p>
+			You can install vanilla marquee via npm:<br>
+			<code>npm i vanilla-marquee</code><br><br>
+			or via <a href="https://cdn.jsdelivr.net/npm/vanilla-marquee/dist/vanilla-marquee.min.js" target="_blank" rel="noopener">jsdelivr</a> using script type="module":<br>
+			<code>
+				import marquee from 'https://cdn.jsdelivr.net/npm/vanilla-marquee/dist/vanilla-marquee.js';<br>
+				new marquee( document.getElementById( 'marquee' ) );
+			</code>
+		</p>
 
 		<h2>Markup</h2>
 		<p>You can use any markup you want</p>
-		
+
 		<h2>Options</h2>
-		<p>TODO write options</p>
-		
-		<h2>Example</h2>
-		<div id="marquee-wrap">
-			<h1 id="marquee">Vanilla marquee is awesome!</h1>
+		<p>
+			Refer to the <a href="https://github.com/mattiacoll/vanilla-marquee">Documentation</a>
+		</p>
+
+		<h2>Examples</h2>
+		<div class="marquee-wrap">
+			<h1 class="marquee marquee-1">Vanilla marquee is awesome!</h1>
 		</div>
 
-	</div>
-	
-	<script type="module">
+	</section>
+
+	<script type="module" defer>
 		import marquee from 'https://cdn.jsdelivr.net/npm/vanilla-marquee/dist/vanilla-marquee.js';
-	
-		new marquee( document.getElementById( 'marquee' ) );
+
+		new marquee( document.querySelector( '.marquee-1' ) );
 	</script>
 
 </body>
