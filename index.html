@@ -67,6 +67,18 @@
 		<h2>Examples</h2>
 		<div class="marquee-wrap">
 			<h1 class="marquee marquee-1">Vanilla marquee is awesome!</h1>
+			<p>Changing speed</p>
+			<h1 class="marquee marquee-2">Vanilla marquee is awesome!</h1>
+			<p>Changing direction</p>
+			<h1 class="marquee marquee-3">Vanilla marquee is awesome!</h1>
+			<p>Using easing animations</p>
+			<h1 class="marquee marquee-4">Vanilla marquee is awesome!</h1>
+			<h1 class="marquee marquee-5">Vanilla marquee is awesome!</h1>
+			<h1 class="marquee marquee-6">Vanilla marquee is awesome!</h1>
+			<p>Pausing on hover</p>
+			<h1 class="marquee marquee-7">Vanilla marquee is awesome!</h1>
+			<p>No gap</p>
+			<h1 class="marquee marquee-8">Vanilla marquee is awesome!</h1>
 		</div>
 
 	</section>
@@ -75,6 +87,13 @@
 		import marquee from 'https://cdn.jsdelivr.net/npm/vanilla-marquee/dist/vanilla-marquee.js';
 
 		new marquee( document.querySelector( '.marquee-1' ) );
+		new marquee( document.querySelector( '.marquee-2' ), { speed: 200 } );
+		new marquee( document.querySelector( '.marquee-3' ), { direction: 'down', speed: 10, delayBeforeStart: 0 } );
+		new marquee( document.querySelector( '.marquee-4' ), { css3easing: "ease", speed: 100 } );
+		new marquee( document.querySelector( '.marquee-5' ), { css3easing: "ease-in", speed: 100 } );
+		new marquee( document.querySelector( '.marquee-6' ), { css3easing: "ease-out", speed: 100 } );
+		new marquee( document.querySelector( '.marquee-7' ), { pauseOnHover: true } );
+		new marquee( document.querySelector( '.marquee-8' ), { duplicated: true, gap: 0, speed: 200 } );
 	</script>
 
 </body>
