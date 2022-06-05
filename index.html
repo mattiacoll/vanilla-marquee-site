@@ -58,8 +58,7 @@
 		</p>
 			<pre><code class="language-javascript">import marquee from 'https://cdn.jsdelivr.net/npm/vanilla-marquee/dist/vanilla-marquee.js';
 
-new marquee( document.getElementById( 'marquee' ) );</code>
-</pre>
+new marquee( document.getElementById( 'marquee' ) );</code></pre>
 		</p>
 
 		<h2>Markup</h2>
@@ -72,19 +71,83 @@ new marquee( document.getElementById( 'marquee' ) );</code>
 
 		<h2>Examples</h2>
 		<div class="marquee-wrap">
-			<h1 class="marquee marquee-1">Vanilla marquee is awesome!</h1>
-			<p>Changing speed</p>
-			<h1 class="marquee marquee-2">Vanilla marquee is awesome!</h1>
-			<p>Changing direction</p>
-			<h1 class="marquee marquee-3">Vanilla marquee is awesome!</h1>
-			<p>Using easing animations</p>
-			<h1 class="marquee marquee-4">Vanilla marquee is awesome!</h1>
-			<h1 class="marquee marquee-5">Vanilla marquee is awesome!</h1>
-			<h1 class="marquee marquee-6">Vanilla marquee is awesome!</h1>
-			<p>Pausing on hover</p>
-			<h1 class="marquee marquee-7">Vanilla marquee is awesome!</h1>
-			<p>No gap</p>
-			<h1 class="marquee marquee-8">Vanilla marquee is awesome!</h1>
+			<div class="marquee-example">
+				<p>Default config</p>
+				<h1 class="marquee marquee-1">Vanilla marquee is awesome!</h1>
+				<pre><code class="language-javascript">import marquee from 'https://cdn.jsdelivr.net/npm/vanilla-marquee/dist/vanilla-marquee.js';
+
+new marquee( document.getElementById( 'marquee' ) );</code></pre>
+			</div>
+
+			<div class="marquee-example">
+				<p>Changing speed</p>
+				<h1 class="marquee marquee-2">Vanilla marquee is awesome!</h1>
+				<pre><code class="language-javascript">import marquee from 'https://cdn.jsdelivr.net/npm/vanilla-marquee/dist/vanilla-marquee.js';
+
+new marquee( document.getElementById( 'marquee' ), {
+  speed: 200
+});</code></pre>
+			</div>
+
+			<div class="marquee-example">
+				<p>Changing direction</p>
+				<h1 class="marquee marquee-3">Vanilla marquee is awesome!</h1>
+				<pre><code class="language-javascript">import marquee from 'https://cdn.jsdelivr.net/npm/vanilla-marquee/dist/vanilla-marquee.js';
+
+new marquee( document.getElementById( 'marquee' ), {
+  delayBeforeStart: 0
+  direction:        'down',
+  speed:            10,
+});</code></pre>
+			</div>
+
+			<div class="marquee-example">
+				<p>Using easing animations</p>
+				<h1 class="marquee marquee-4">Vanilla marquee is awesome!</h1>
+				<pre><code class="language-javascript">import marquee from 'https://cdn.jsdelivr.net/npm/vanilla-marquee/dist/vanilla-marquee.js';
+
+new marquee( document.getElementById( 'marquee' ), {
+  css3easing: 'ease',
+  speed:      100,
+});</code></pre>
+
+				<h1 class="marquee marquee-5">Vanilla marquee is awesome!</h1>
+				<pre><code class="language-javascript">import marquee from 'https://cdn.jsdelivr.net/npm/vanilla-marquee/dist/vanilla-marquee.js';
+
+new marquee( document.getElementById( 'marquee' ), {
+  css3easing: 'ease-in',
+  speed:      100,
+});</code></pre>
+				<h1 class="marquee marquee-6">Vanilla marquee is awesome!</h1>
+				<pre><code class="language-javascript">import marquee from 'https://cdn.jsdelivr.net/npm/vanilla-marquee/dist/vanilla-marquee.js';
+
+new marquee( document.getElementById( 'marquee' ), {
+  css3easing: 'ease-out',
+  speed:      100,
+});</code></pre>
+			</div>
+
+			<div class="marquee-example">
+				<p>Pausing on hover</p>
+				<h1 class="marquee marquee-7">Vanilla marquee is awesome!</h1>
+				<pre><code class="language-javascript">import marquee from 'https://cdn.jsdelivr.net/npm/vanilla-marquee/dist/vanilla-marquee.js';
+
+new marquee( document.getElementById( 'marquee' ), {
+  pauseOnHover: true
+});</code></pre>
+			</div>
+
+			<div class="marquee-example">
+				<p>No gap</p>
+				<h1 class="marquee marquee-8">Vanilla marquee is awesome!</h1>
+				<pre><code class="language-javascript">import marquee from 'https://cdn.jsdelivr.net/npm/vanilla-marquee/dist/vanilla-marquee.js';
+
+new marquee( document.getElementById( 'marquee' ), {
+  duplicated: true,
+  gap:        0,
+  speed:      200,
+});</code></pre>
+			</div>
 		</div>
 
 	</section>
