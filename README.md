@@ -1,1 +1,1 @@
-The website can be viewd at https://mattiacoll.github.io/vanilla-marquee-site/
+The website can be viewed at https://mattiacoll.github.io/vanilla-marquee-site/
