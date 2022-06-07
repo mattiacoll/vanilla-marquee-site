@@ -115,14 +115,32 @@ new marquee( document.getElementById( 'marquee' ), {
 
 new marquee( document.getElementById( 'marquee' ), {
   delayBeforeStart: 0
-  direction:        'down',
+  direction:        'right',
   speed:            10,
+});</code></pre>
+
+        <h3 class="marquee marquee-4">Vanilla marquee is awesome!</h3>
+        <pre><code class="language-javascript">import marquee from 'https://cdn.jsdelivr.net/npm/vanilla-marquee/dist/vanilla-marquee.js';
+
+new marquee( document.getElementById( 'marquee' ), {
+delayBeforeStart: 0
+direction:        'down',
+speed:            10,
+});</code></pre>
+
+        <h3 class="marquee marquee-5">Vanilla marquee is awesome!</h3>
+        <pre><code class="language-javascript">import marquee from 'https://cdn.jsdelivr.net/npm/vanilla-marquee/dist/vanilla-marquee.js';
+
+new marquee( document.getElementById( 'marquee' ), {
+delayBeforeStart: 0
+direction:        'up',
+speed:            10,
 });</code></pre>
       </div>
 
       <div class="marquee-example">
         <p>Using easing animations</p>
-        <h3 class="marquee marquee-4">Vanilla marquee is awesome!</h3>
+        <h3 class="marquee marquee-6">Vanilla marquee is awesome!</h3>
         <pre><code class="language-javascript">import marquee from 'https://cdn.jsdelivr.net/npm/vanilla-marquee/dist/vanilla-marquee.js';
 
 new marquee( document.getElementById( 'marquee' ), {
@@ -130,14 +148,14 @@ new marquee( document.getElementById( 'marquee' ), {
   speed:      100,
 });</code></pre>
 
-        <h3 class="marquee marquee-5">Vanilla marquee is awesome!</h3>
+        <h3 class="marquee marquee-7">Vanilla marquee is awesome!</h3>
         <pre><code class="language-javascript">import marquee from 'https://cdn.jsdelivr.net/npm/vanilla-marquee/dist/vanilla-marquee.js';
 
 new marquee( document.getElementById( 'marquee' ), {
   css3easing: 'ease-in',
   speed:      100,
 });</code></pre>
-        <h3 class="marquee marquee-6">Vanilla marquee is awesome!</h3>
+        <h3 class="marquee marquee-8">Vanilla marquee is awesome!</h3>
         <pre><code class="language-javascript">import marquee from 'https://cdn.jsdelivr.net/npm/vanilla-marquee/dist/vanilla-marquee.js';
 
 new marquee( document.getElementById( 'marquee' ), {
@@ -148,7 +166,7 @@ new marquee( document.getElementById( 'marquee' ), {
 
       <div class="marquee-example">
         <p>Pausing on hover</p>
-        <h3 class="marquee marquee-7">Vanilla marquee is awesome!</h3>
+        <h3 class="marquee marquee-9">Vanilla marquee is awesome!</h3>
         <pre><code class="language-javascript">import marquee from 'https://cdn.jsdelivr.net/npm/vanilla-marquee/dist/vanilla-marquee.js';
 
 new marquee( document.getElementById( 'marquee' ), {
@@ -158,7 +176,7 @@ new marquee( document.getElementById( 'marquee' ), {
 
       <div class="marquee-example">
         <p>No gap</p>
-        <h3 class="marquee marquee-8">Vanilla marquee is awesome!</h3>
+        <h3 class="marquee marquee-10">Vanilla marquee is awesome!</h3>
         <pre><code class="language-javascript">import marquee from 'https://cdn.jsdelivr.net/npm/vanilla-marquee/dist/vanilla-marquee.js';
 
 new marquee( document.getElementById( 'marquee' ), {
@@ -176,15 +194,17 @@ new marquee( document.getElementById( 'marquee' ), {
 
     new marquee( document.querySelector( '.marquee-1' ) );
     new marquee( document.querySelector( '.marquee-2' ), { speed: 200 } );
-    new marquee( document.querySelector( '.marquee-3' ), { direction: 'down', speed: 10, delayBeforeStart: 0 } );
-    new marquee( document.querySelector( '.marquee-4' ), { css3easing: 'ease', speed: 100 } );
-    new marquee( document.querySelector( '.marquee-5' ), { css3easing: 'ease-in', speed: 100 } );
-    new marquee( document.querySelector( '.marquee-6' ), { css3easing: 'ease-out', speed: 100 } );
-    new marquee( document.querySelector( '.marquee-7' ), { pauseOnHover: true } );
-    new marquee( document.querySelector( '.marquee-8' ), { duplicated: true, gap: 0, speed: 200 } );
+    new marquee( document.querySelector( '.marquee-3' ), { direction: 'right', speed: 10, delayBeforeStart: 0 } );
+    new marquee( document.querySelector( '.marquee-4' ), { direction: 'down', speed: 10, delayBeforeStart: 0 } );
+    new marquee( document.querySelector( '.marquee-5' ), { direction: 'up', speed: 10, delayBeforeStart: 0 } );
+    new marquee( document.querySelector( '.marquee-6' ), { css3easing: 'ease', speed: 100 } );
+    new marquee( document.querySelector( '.marquee-7' ), { css3easing: 'ease-in', speed: 100 } );
+    new marquee( document.querySelector( '.marquee-8' ), { css3easing: 'ease-out', speed: 100 } );
+    new marquee( document.querySelector( '.marquee-9' ), { pauseOnHover: true } );
+    new marquee( document.querySelector( '.marquee-10' ), { duplicated: true, gap: 0, speed: 200 } );
   </script>
 
-  <!-- highlight.js for syntax highlighting-->
+  <!-- highlight.js for syntax highlighting -->
   <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/javascript.min.js"></script>
 
